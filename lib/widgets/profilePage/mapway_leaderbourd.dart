@@ -7,12 +7,11 @@ Widget mapWayLeaderBourd(Size size) {
   String mimage1 = "assets/images/pPage/image5.png";
   String mimage2 = "assets/images/pPage/image6.png";
   return Container(
-    margin: const EdgeInsets.symmetric(horizontal: 20),
+    padding: const EdgeInsets.symmetric(horizontal: 20),
     height: size.height / 7,
-    width: double.infinity,
     color: Colors.transparent,
     child: Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
         // mapWay(right side)
         mAndLItem(size, "نقشه راه دوره", 10, 3, "ایستگاه کامل شده", -2, limage1,
@@ -51,7 +50,7 @@ mAndLItem(Size size, String title, int maxN, int minN, String bInfo, double x,
                 const BorderRadius.only(bottomLeft: Radius.circular(10)),
             child: Image.asset(
               image1,
-              height: size.width / 12,
+              height: size.height / 12,
               width: size.width / 12,
             ),
           ),
@@ -64,7 +63,7 @@ mAndLItem(Size size, String title, int maxN, int minN, String bInfo, double x,
                 const BorderRadius.only(bottomLeft: Radius.circular(10)),
             child: Image.asset(
               image2,
-              height: size.width / 7,
+              height: size.height / 7,
               width: size.width / 7,
             ),
           ),

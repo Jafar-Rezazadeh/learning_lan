@@ -17,7 +17,7 @@ Widget midSection(context) {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         //right Side
-        rightSide(screenHeight, screenWidth),
+        rightSide(screenHeight, screenWidth, 62),
         //left Side
         leftSide(screenHeight, screenWidth),
       ],
@@ -26,8 +26,7 @@ Widget midSection(context) {
 }
 
 // Right side
-Widget rightSide(screenHeight, screenWidth) {
-  int progressed = 62;
+Widget rightSide(screenHeight, screenWidth, progressed) {
   return Container(
     height: double.infinity,
     width: screenWidth / 2.35,
@@ -44,6 +43,7 @@ Widget rightSide(screenHeight, screenWidth) {
       ],
     ),
     child: Column(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         //title and progress
@@ -61,20 +61,28 @@ Widget rightSide(screenHeight, screenWidth) {
             ),
 
             //progress
-            CircularPercentIndicator(
-              radius: screenHeight / 45,
-              lineWidth: screenWidth / 150,
-              percent: double.parse("0.$progressed"),
-              progressColor: ColorPallet().lightGreen,
-              backgroundWidth: screenWidth / 300,
-              backgroundColor: ColorPallet().lightGreen.withOpacity(0.2),
-              center: Text(
-                "$progressed%",
-                style: TextStyle(
-                  color: ColorPallet().lightGreen,
-                  fontSize: screenWidth / 48,
-                  fontWeight: FontWeight.bold,
-                ),
+            Container(
+              margin: EdgeInsets.only(left: screenWidth / 50),
+              child: Stack(
+                alignment: Alignment.center,
+                children: [
+                  CircularPercentIndicator(
+                    radius: screenHeight / 45,
+                    lineWidth: screenWidth / 150,
+                    percent: double.parse("0.$progressed"),
+                    progressColor: ColorPallet().lightGreen,
+                    backgroundWidth: screenWidth / 300,
+                    backgroundColor: ColorPallet().lightGreen.withOpacity(0.2),
+                  ),
+                  Text(
+                    "$progressed%",
+                    style: TextStyle(
+                      color: ColorPallet().lightGreen,
+                      fontSize: screenWidth / 48,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ],
               ),
             ),
           ],
