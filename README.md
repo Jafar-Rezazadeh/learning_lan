@@ -1,7 +1,7 @@
 # languege_learning
 
-## طرح درخواستی برای استخدام یک شرکت، ساخته شده با فریم ورک
-flutter
+## طرح درخواستی برای استخدام یک شرکت 
+## framework: Flutter
 # Preview
 <img src="https://github.com/Jafar-Rezazadeh/learning_lan/assets/59100135/0667657a-8851-406e-bd37-7153b9d7d9a1" height="500" width="300"/>
 <img src="https://github.com/Jafar-Rezazadeh/learning_lan/assets/59100135/74e2b9ef-3bbc-4f4a-bc8a-3fdc81527254" height="500" width="300"/>
