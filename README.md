@@ -19,7 +19,7 @@
 <br />
 <br />
 
-### برای دریافت فایل نصبی نرم افزار از این لینک استفاده کنید: [دریافت از گوگل درایو](https://drive.google.com/file/d/1zCv4QvHicYy6Ten0X5Nki1f1XJ1xcEFM/view?usp=drive_link)
+## برای دریافت فایل نصبی نرم افزار از این لینک استفاده کنید: [دریافت از گوگل درایو](https://drive.google.com/file/d/1zCv4QvHicYy6Ten0X5Nki1f1XJ1xcEFM/view?usp=drive_link)
 
 <br />
 <br />
